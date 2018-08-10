@@ -1,0 +1,22 @@
+<div class="row">
+	<h1 class="basic-header">Welcome to the Forex Price Viewer Demo</h1>
+</div>
+<div class="row form-container-center">
+
+	<div class="col">
+	</div>
+	<div class="col dark-bg">
+		<h3 class="basic-header">Login</h1>
+		<%= form_for :login, url: '/login', html: { class: "center form_container" } do %>
+			<div class="from-input">
+				<input id="username" name="username" type="text" class="form-control" placeholder="Username" required/>
+			</div>
+			<div class="form-input">
+				<input id="password" name="password" type="password" class="form-control" placeholder="Password" required/>
+			</div>
+			<button class="btn btn-primary form-margin" type="submit">Login</button>
+		<% end %>
+	</div>
+	<div class="col">
+	</div>
+</div>

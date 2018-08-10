@@ -1,0 +1,67 @@
+<div class="row">
+	<h1 class="basic-header">Forex Price Dashboard</h1>
+</div>
+
+<div class="row form-container-center">
+	<div class="col center">
+		<div class="container">
+			<div class="row">
+				<h3>
+				<%= @priceInformation["Information"] %>
+				</h3>
+			</div>
+			<div class="row">
+				<table id="dataTable" class="table">
+					<thead>
+						<th>
+							To
+						</th>
+						<th>
+							From
+						</th>
+						<th>
+							Open
+						</th>
+						<th>
+							High
+						</th>
+						<th>
+							Low
+						</th>
+						<th>
+							Close
+						</th>
+						<th>
+							Last Updated
+						</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<%= @priceInformation["To Symbol"] %>
+							</td>
+							<td>
+								<%= @priceInformation["From Symbol"] %>
+							</td>
+							<td>
+								<%= @priceInformation["Open"] %>
+							</td>
+							<td>
+								<%= @priceInformation["High"] %>
+							</td>
+							<td>
+								<%= @priceInformation["Low"] %>
+							</td>
+							<td>
+								<%= @priceInformation["Close"] %>
+							</td>
+							<td>
+								<%= @priceInformation["Last Refreshed"] %>
+							</td>
+						</tr>
+					</tbody>
+				<table>
+			</div>
+		</div>
+	</div>
+</div>

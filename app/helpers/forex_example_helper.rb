@@ -1,0 +1,2 @@
+module ForexExampleHelper
+end
