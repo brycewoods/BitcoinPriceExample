@@ -9,14 +9,14 @@ Login page is a basic demo. It is not secure.
 
 Before using the app you will need to run:
 
-Ensure you are inside the applications folder.
+(Ensure you are inside the applications folder.)
 
-rake db:migrate
+> rake db:migrate
 
 You will also need to create a user.
 
 Inside the rails console run:
 
-User.create :username => "AnyUserName" , :password => "AnyPassword"
+> User.create :username => "AnyUserName" , :password => "AnyPassword"
 
 After that everything should work fine.
