@@ -5,10 +5,7 @@ Currently only retrieves USD to Euro.
 
 Login page is a basic demo. It is not secure.
 
-## NOTE: There could be issues with migrating the database.
-## Please see below.
-
-
+## NOTE: There could be issues with migrating the database. Please see below.
 
 Before using the app you will need to run:
 
