@@ -25,8 +25,8 @@ class FxPriceProcessor
 	# ---------------------------------------------------
 	def GetPriceInformation(jsonObj)
 
-		# Today's date is used as a key to returned latest data
-		currentDate = DateTime.now
+		# Need to get yesterday date as it is on American time. Can cause issues
+		currentDate = DateTime.yesterday
 		
 		Rails.logger.info currentDate.strftime("%Y-%m-%d")
 
