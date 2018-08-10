@@ -5,18 +5,12 @@ Currently only retrieves USD to Euro.
 
 Login page is a basic demo. It is not secure.
 
-## NOTE: There could be issues with migrating the database. Please see below.
+## Installation
 
-Before using the app you will need to run:
+1. Download and extract application.
+2. Open command prompt and change the directory to the extraction path.
+3. Due to database issues you will need to run "rake db:migrate"
+4. Create a user. Inside the rails console run 'User.create :username => "Webbernet" , :password => "Webbernet"'. Please be aware the details you enter here will be required later on the login page.
+5. After exiting the rails console. Run the rails server by entering the command 'rails server'.
+6. Use the same details that you used in the User.create command to login to application.
 
-(Ensure you are inside the applications folder.)
-
-> rake db:migrate
-
-You will also need to create a user.
-
-Inside the rails console run:
-
-> User.create :username => "AnyUserName" , :password => "AnyPassword"
-
-After that everything should work fine.
