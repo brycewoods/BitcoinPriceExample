@@ -30,7 +30,7 @@ class FxPriceProcessor
 		
 		Rails.logger.info currentDate.strftime("%Y-%m-%d")
 
-		resultArray = { "Information" => jsonObj["Meta Data"]["1. Information"] ,
+		resultArray = { "Information" => "Forex Data" ,
 						"Time Zone" => jsonObj["Meta Data"]["6. Time Zone"] ,
 						"Last Refreshed" => jsonObj["Meta Data"]["5. Last Refreshed"] ,
 						"From Symbol" => jsonObj["Meta Data"]["2. From Symbol"] ,
