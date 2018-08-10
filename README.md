@@ -5,7 +5,15 @@ Currently only retrieves USD to Euro.
 
 Login page is a basic demo. It is not secure.
 
-Login Details:
+NOTE: There could be issues with migrating the database.
+Please see below.
 
-Username: Webbernet
-Password: Webbernet
+May need to run:
+
+rake db:migrate
+
+You will also need to create a user.
+
+Inside the rails console run:
+
+User.create :username => "AnyUserName" , :password => "AnyPassword"
